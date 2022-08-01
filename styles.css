@@ -1,0 +1,390 @@
+:root{
+    --row_increment:10px;
+    --card_xsmall:12;
+    --card_small:14;
+    --card_medium:16;
+    --card_large:19;
+}
+
+/* estilos del bar-nav */
+.bar-nav{
+    top: 0;
+    display: block;
+    position: sticky;
+    z-index: 999;
+    margin-top: 5px;
+    background-color:white;
+
+}
+ .modal_bar-nav{
+    padding: 10px; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+} 
+.modal_bar-nav .iconp{
+    margin: 5px;
+    width: 30x;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;   
+    }
+.pinte:hover{
+    opacity: .8;
+    background-color: #f0f0f0;    
+}
+.iconp .pinte{
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;}
+
+.modal_bar-nav .inicio{
+    margin: 5px;
+    width: 90px;
+    height: 32px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color:black ;
+    cursor: pointer;
+}
+.modal_bar-nav .hoy-crear{
+    cursor: pointer;
+    margin: 5px 15px 5px 5px;
+    width: 120px;
+    height: 60%;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.hoy-crear:hover{
+    opacity: .8;
+}
+.hoy-crear .hoy{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.hoy-crear .crear{
+    margin:4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+@media only screen and (max-device-width:768px){
+    .modal_bar-nav .hoy-crear {visibility: hidden;
+        display:none
+    }
+    .search{display: block;}
+   
+}
+.bar-nav .modal_bar-nav .down{
+    margin-top: 3px;
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.bar-nav .modal_bar-nav .search{
+    margin: 5px;
+    font-family: "apple-system","BlinkMacSystemFont","Segoe UI","Roboto,Oxygen-Sans,Ubuntu,Cantarell","Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","ＭＳ Ｐゴシック",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: #333;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    opacity: .6;
+}
+.search .icon-search{
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+      
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.modal_bar-nav .search .icon-search span{
+    overflow: hidden;
+    width: 50px;
+    height: 60%;
+}
+.search-img{
+    margin: 5px;
+    width: 20px;}
+
+ .modal_bar-nav .search .icon-search{ 
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.modal_bar-nav .tools-user{
+    cursor: pointer;
+    margin: 5px;
+    width: auto;
+    height: 60%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tools-user:hover{opacity: .6;}
+.modal_bar-nav .tools-user .notificacion{
+    justify-content: center;
+    align-content: center;
+    height: 32px;
+    width: 30%;
+}
+
+ .notificacion img{
+    width: 30%;
+ }
+.notif{
+    border-radius: 50%;
+    width: 30px;
+margin-right: 5px;}
+
+.notif:hover{
+    background-color: #f0f0f0; 
+    padding: 8px;
+}
+
+.modal_bar-nav .tools-user .mesage{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    width: 33%;
+
+}
+.mesage img{
+    border-radius: 50%;
+    width:40px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.mesage img:hover{
+    background-color: #f0f0f0;
+    padding: 8px;
+}
+.modal_bar-nav .tools-user .user{
+    display: flex;
+    width: 33%;
+    border-radius: 50%;
+}
+
+.user img{
+    border-radius: 50%;
+    justify-content: center;
+    align-content: center;
+    margin-left: 20px;
+    width: 30px;
+    font-weight: 700;
+}
+.user img:hover{
+    background-color: #f0f0f0;
+    padding: 8px;
+}
+
+.user .down-user{
+    width:11;
+    opacity: .6;
+    margin-left: 1px;
+    top: 5px;
+    font-weight: 0;
+}
+.modal_bar-nav .tools-user .more{
+    display: flex;
+    width: 3%;
+    border-radius: 50%;
+}
+.more img{
+    width: 30px;
+    margin-left: 5px;
+}
+.more img:hover{
+    background-color: #f0f0f0;
+    padding: 6px;  
+}
+
+/* ---------------GRID CONTAINER--------------------------- */
+.grid-container{
+    margin-top: 20px;
+    display: grid;
+    /* position: absolute; */
+    grid-template-columns: repeat(auto-fill, 230px); 
+    grid-auto-rows: var(--row_increment);
+    gap: 20px;
+    justify-content: center;
+}
+.alto{
+    width: 230px;
+    height: auto;
+    padding: 0;
+}
+.card_xsmall{
+    height: var(--card_xsmall);
+    grid-row-end: span var(--card_xsmall);
+}
+.card_small{
+    /* height: var(--card_small); */
+    grid-row-end: span var(--card_small);
+}
+.card_medium{
+    /* height: var(--card_medium); */
+    grid-row-end: span var(--card_medium);
+}
+.card_large{
+    /* height: var(--card_large); */
+    grid-row-end: span var(--card_large);
+}
+
+
+/* Inician estilos del hidden de las tarjetas */
+.card{
+    margin-top: 20px;
+    width: 230px;
+    height: 100%;
+    border-radius: 16px;
+    position: relative;
+    background-color:rgba(232, 142, 234, 0.59);
+    overflow: hidden;
+    opacity:1;
+    box-shadow: 0 1px 2px 0px rgba(0,0,0,0.22);
+}
+.pin_title{
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+.pin_modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 9999;
+    background-color: lightgray;
+    opacity: 0;
+    transition-duration: 0.3s;
+    box-shadow: 0 1px 2px 0px rgba(0,0,0,0.22);
+}
+.pin_modal:hover{
+    opacity: .8;
+}
+.pin_modal .modal_head{
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pin_modal .modal_head .save_card{
+    margin-right: 20px;
+    width: 63px;
+    height: 37px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    background-color: #ff0000;
+    cursor: pointer;
+}
+.pin_modal .modal_foot{
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pint_mock_icon_container{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.pint_mock_icon{width: 50%;}
+
+.pin_modal .modal_foot .destination{
+    width: 132px;
+    height: 32px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.pin_modal .modal_foot .destination span{
+    overflow: hidden;
+}
+.pin_image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pin_image img{
+    max-height: 100%;
+
+}
+
+
+
+
+
